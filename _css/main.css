@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: beige;
+}
+.centrar{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-content: center;
+    
+    
+   }

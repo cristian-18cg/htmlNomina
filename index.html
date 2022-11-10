@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="_css/main.css">
+    <title>Nomina</title>
+</head>
+<body>
+    <header>
+        <h1 class="centrar">NOMINA</h1>
+    </header>
+    <div class="centrar"  >
+        <fieldset style="width:400px;">
+            <legend style="font-size:30px ;">Registro</legend>
+            <form action="">
+              <label for="firstname">Nombres:</label><br>
+              <input type="text" name="firstname" id="firstname" autofocus aria-required pattern="[A-Za-z ]{2,40}" placeholder="First Name"><br>
+              
+              <label for="secondname">Apellido:</label><br>
+              <input type="text" name="lastname" id="lastname"  aria-required pattern="[A-Za-z ]{2,40}" placeholder="Last Name"><br>
+
+              <label for="diasT">Dias trabajados:</label><br>
+              <input type="text" name="diasTrabajados" pattern="[]{1,}" id="diasT">
+
+
+
+
+              <input type="submit" value="ENVIAR"><br>
+              <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18<br>
+              <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30<br>
+              <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50<br>
+              <input type="radio" id="mas50" value="mas50" name="edad"/>Más de 50 <br>
+            </form>
+          </fieldset>
+    </div>
+    
+</body>
+</html>
