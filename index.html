@@ -12,26 +12,29 @@
         <h1 class="centrar">NOMINA</h1>
     </header>
     <div class="centrar"  >
-        <fieldset style="width:400px;">
+        <fieldset style="width:200px ;"  class="centrar">
             <legend style="font-size:30px ;">Registro</legend>
-            <form action="">
-              <label for="firstname">Nombres:</label><br>
+            <form style="    justify-items: center; align-content: center;">
+              <label for="firstname">First Name:</label><br>
               <input type="text" name="firstname" id="firstname" autofocus aria-required pattern="[A-Za-z ]{2,40}" placeholder="First Name"><br>
               
-              <label for="secondname">Apellido:</label><br>
+              <label for="secondname">Last Name:</label><br>
               <input type="text" name="lastname" id="lastname"  aria-required pattern="[A-Za-z ]{2,40}" placeholder="Last Name"><br>
 
-              <label for="diasT">Dias trabajados:</label><br>
-              <input type="text" name="diasTrabajados" pattern="[]{1,}" id="diasT">
+              <label for="document">Document:</label><br>
+              <input type="text" name="Document" id="document"  aria-required pattern="[0-9]{10}" placeholder="Document 10 numbers"><br>
+              <label for="MonthlySalary">Monthly Salary:</label><br>
+              <input type="text" name="MonthlySalary" id="MonthlySalary"  aria-required pattern="[0-9]{6,9}" placeholder="$1000000"><br>
+              <label for="workedD">Worked Days:</label><br>
+              <input type="number" id="workedD" name="Worked Days" min="1" max="365"><br>
 
+             
+              <label for="menos18">Age:</label><br>
 
-
-
-              <input type="submit" value="ENVIAR"><br>
               <input type="radio" id="menos18" value="menos18" name="edad"/>Menos de 18<br>
-              <input type="radio" id="18a30" value="18a30" name="edad"/>18 a 30<br>
-              <input type="radio" id="31a50" value="31a50" name="edad"/>31 a 50<br>
-              <input type="radio" id="mas50" value="mas50" name="edad"/>Más de 50 <br>
+              <input type="radio" id="18a30" value="18a30" name="edad"/>Mayor de 18 <br>
+
+              <input type="submit" value="Send"><br>
             </form>
           </fieldset>
     </div>
